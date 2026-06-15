@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Obsidian Image Clipper Cookie Sync",
+  "version": "0.1.0",
+  "description": "Syncs configured protected-site cookies to a private local auth file for Obsidian Image Clipper.",
+  "permissions": ["activeTab", "alarms", "cookies", "nativeMessaging", "storage"],
+  "optional_host_permissions": ["https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Obsidian Image Clipper",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}

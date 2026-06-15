@@ -1,0 +1,10 @@
+{
+  "id": "obsidian-image-clipper",
+  "name": "Obsidian Image Clipper",
+  "version": "0.1.0",
+  "minAppVersion": "1.0.3",
+  "description": "Downloads remote attachments locally, with optional exact-domain Cookie authentication for protected images.",
+  "author": "huhan and Obsidian Image Clipper contributors; based on Local Images Plus",
+  "authorUrl": "https://github.com/badoll/obsidian-image-clipper",
+  "isDesktopOnly": true 
+}

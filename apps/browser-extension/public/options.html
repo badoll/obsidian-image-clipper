@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Obsidian Image Clipper Settings</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="surface options">
+    <header class="mast">
+      <p class="eyebrow">Settings</p>
+      <h1>Protected Site Cookie Sync</h1>
+    </header>
+
+    <main class="stack">
+      <section class="status-strip">
+        <span data-status data-tone="idle">Loading</span>
+        <strong data-domain>No domains</strong>
+      </section>
+
+      <section class="health-panel">
+        <div class="section-label">
+          <span>Health</span>
+        </div>
+        <div class="health-list" data-health-list></div>
+      </section>
+
+      <label class="switch-row">
+        <span>Automatic refresh</span>
+        <input name="enabled" type="checkbox">
+      </label>
+
+      <section class="domains-panel">
+        <div class="section-label">
+          <span>Protected domains</span>
+          <small data-current-domain data-tone="idle">Current page: checking</small>
+        </div>
+        <div class="domain-list" data-domain-list></div>
+        <label class="field domain-field">
+          <span>Add domain</span>
+          <input name="domain" type="text" spellcheck="false" autocomplete="off" placeholder="protected.example.com">
+        </label>
+        <button class="secondary inline-action" data-add-domain>Add domain</button>
+      </section>
+
+      <p class="message compact" data-domain-error data-tone="idle"></p>
+
+      <label class="field">
+        <span>Refresh interval in minutes</span>
+        <input name="refreshIntervalMinutes" type="number" min="5" max="1440" step="5">
+      </label>
+
+      <dl class="facts">
+        <div>
+          <dt>Last sync</dt>
+          <dd data-updated>Never</dd>
+        </div>
+        <div>
+          <dt>Cookies</dt>
+          <dd data-count>0</dd>
+        </div>
+        <div>
+          <dt>Permission</dt>
+          <dd data-permission data-tone="idle">Checking</dd>
+        </div>
+        <div>
+          <dt>Config file</dt>
+          <dd data-config-path>Not connected</dd>
+        </div>
+        <div>
+          <dt>Config status</dt>
+          <dd data-config-status data-tone="idle">Not checked</dd>
+        </div>
+      </dl>
+
+      <p class="message" data-error data-tone="idle">No errors reported.</p>
+
+      <div class="actions">
+        <button data-save>Save and grant access</button>
+        <button class="secondary" data-load-config>Reload config.json</button>
+        <button class="secondary" data-request-permission>Grant access</button>
+        <button class="secondary" data-refresh>Refresh now</button>
+        <button class="secondary" data-metadata>Show auth file metadata</button>
+      </div>
+
+      <pre class="metadata" data-metadata-output></pre>
+    </main>
+
+    <script src="options.js"></script>
+  </body>
+</html>

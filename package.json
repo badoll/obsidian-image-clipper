@@ -1,0 +1,26 @@
+{
+  "name": "obsidian-image-clipper-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @obsidian-image-clipper/shared && npm run build -w obsidian-image-clipper && npm run build -w @obsidian-image-clipper/browser-extension && npm run build -w @obsidian-image-clipper/native-host",
+    "build:plugin": "npm run build -w obsidian-image-clipper",
+    "build:extension": "npm run build -w @obsidian-image-clipper/browser-extension",
+    "build:native-host": "npm run build -w @obsidian-image-clipper/native-host",
+    "package:release": "node scripts/package-release.mjs",
+    "test": "vitest run",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "install:native-host:macos": "node scripts/install-native-host-macos.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "esbuild": "^0.28.1",
+    "typescript": "^5.5.4",
+    "vitest": "^4.1.8"
+  }
+}

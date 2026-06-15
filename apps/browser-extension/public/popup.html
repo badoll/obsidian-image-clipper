@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Obsidian Image Clipper</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="surface popup">
+    <header class="mast">
+      <p class="eyebrow">Cookie Sync</p>
+      <h1>Obsidian Image Clipper</h1>
+    </header>
+
+    <main class="stack">
+      <section class="status-strip">
+        <span data-status data-tone="idle">Loading</span>
+        <strong data-domain>No domains</strong>
+      </section>
+
+      <dl class="facts">
+        <div>
+          <dt>Last sync</dt>
+          <dd data-updated>Never</dd>
+        </div>
+        <div>
+          <dt>Cookies</dt>
+          <dd data-count>0</dd>
+        </div>
+        <div>
+          <dt>Permission</dt>
+          <dd data-permission data-tone="idle">Checking</dd>
+        </div>
+      </dl>
+
+      <p class="message" data-error data-tone="idle">No errors reported.</p>
+      <p class="message compact" data-current-domain data-tone="idle">Current page: checking</p>
+
+      <div class="actions">
+        <button class="secondary" data-add-current-domain hidden>Add current domain</button>
+        <button data-refresh>Refresh now</button>
+        <button class="secondary" data-grant-access hidden>Grant access</button>
+        <button class="secondary" data-options>Settings</button>
+      </div>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

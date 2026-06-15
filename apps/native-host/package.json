@@ -1,0 +1,11 @@
+{
+  "name": "@obsidian-image-clipper/native-host",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/obsidian-image-clipper-cookie-host.js",
+  "scripts": {
+    "build": "node ../../scripts/build-native-host.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}

@@ -1,0 +1,13 @@
+Obsidian Image Clipper
+======================
+
+This project contains code derived from Local Images Plus:
+
+  https://github.com/Sergei-Korneev/obsidian-local-images-plus
+
+Local Images Plus is licensed under the MIT License. Its license text is kept
+in apps/obsidian-plugin/LICENSE.
+
+Obsidian Image Clipper adds browser Cookie sync, native host integration,
+exact-domain authenticated downloads, diagnostics, packaging, and public
+project documentation around that upstream base.
