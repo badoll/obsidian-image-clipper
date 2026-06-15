@@ -1,6 +1,6 @@
 # Obsidian Image Clipper 中文说明
 
-[English README](./README.md)
+[English](./README.md) | 中文
 
 这是一个面向 Obsidian 的鉴权图片本地化方案，用来解决受保护站点或权限控制严格的内网站点文章剪藏后，正文图片仍然指向远程 `https://protected.example.com/asset/...`，并且因为缺少浏览器登录态而无法被 Local Images Plus 正常下载的问题。
 

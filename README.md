@@ -1,6 +1,6 @@
 # Obsidian Image Clipper
 
-> Looking for Chinese documentation? Read [README_zh-CN.md](./README_zh-CN.md).
+English | [中文](./README_zh-CN.md)
 
 Authenticated image localization for Obsidian notes clipped from protected sites or internal knowledge bases. This project is a fork-style integration based on [Local Images Plus](https://github.com/Sergei-Korneev/obsidian-local-images-plus), with an added browser Cookie sync pipeline and exact-domain authenticated downloading.
 
